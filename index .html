@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio – Computer Science Student & Developer" />
+  <meta name="keywords" content="portfolio, developer, computer science, web development, student" />
+  <meta name="author" content="Alex Morgan" />
+  <title>Sowjanya K M </title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-bracket">&lt;</span>Sowjanya <span class="brand-accent">K M</span><span class="brand-bracket">/&gt;</span>
+      </a>
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero-section">
+    <canvas id="particleCanvas"></canvas>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7 hero-text" data-aos="fade-right" data-aos-duration="900">
+          <p class="hero-greeting">👋 Hello, I'm</p>
+          <h1 class="hero-name">Sowjanya K M</h1>
+          <div class="hero-typed-wrap">
+            <span id="typed-text"></span><span class="typed-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+           Aspiring software developer with a strong interest in web technologies, programming, and problem-solving.
+          </p>
+          <div class="hero-cta d-flex flex-wrap gap-3 mt-4">
+            <a href="assets/Sowjanya_Resume.pdf" download class="btn-primary-custom">
+              <i class="fa-solid fa-download me-2"></i>Download CV
+            </a>
+            
+          </div>
+          <div class="hero-socials mt-4">
+            <a href="https://github.com/sowjanyasuvarna72-spec" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sowjanya-suvarna2" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+           
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="900">
+          <div class="profile-wrapper">
+            <div class="profile-ring"></div>
+            <div class="profile-ring ring2"></div>
+            <img src="assets/sowjanya.jpeg" alt="Sowjanya K M" class="profile-img" />
+            <div class="float-badge badge-1"><i class="fa-brands fa-python"></i></div>
+            <div class="float-badge badge-2"><i class="fa-solid fa-code"></i></div>
+            <div class="float-badge badge-3"><i class="fa-solid fa-database"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section-pad">
+    <div class="container">
+
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">Get to know me</span>
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-10">
+
+                <div class="about-box" data-aos="zoom-in">
+
+                    <h3 class="about-heading text-center mb-4">
+                        Computer Science Student & Aspiring Developer
+                    </h3>
+
+                    <p class="about-text">
+                        Hello! I'm <strong>Sowjanya K M</strong>, a passionate Computer Science student with a strong interest in web development, programming, and emerging technologies. I enjoy creating modern, responsive, and user-friendly websites that provide meaningful digital experiences.
+                    </p>
+
+                    <p class="about-text">
+                        I continuously improve my technical skills through academic projects, certifications, and hands-on learning. My areas of interest include web development, software development, data science concepts, database management, and problem-solving.
+                    </p>
+
+                    <p class="about-text">
+                        I enjoy learning new technologies, working on innovative projects, and applying my knowledge to solve real-world challenges. As a dedicated learner, I strive to enhance both my technical and communication skills while staying updated with the latest industry trends.
+                    </p>
+
+                    <p class="about-text mb-0">
+                        My goal is to build a successful career in the IT industry, contribute to impactful technology solutions, and grow into a skilled software developer.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education" class="section-pad alt-bg">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My journey</span>
+        <h2 class="section-title">Edu<span class="accent">cation</span></h2>
+      </div>
+      <div class="timeline mt-5">
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+          <div class="timeline-card">
+            <span class="tl-year">2019 – 2020</span>
+            <h4>SSLC (10th Grade)</h4>
+            <p class="tl-school"><i class="fa-solid fa-building-columns me-2"></i>S E S GIRLS HIGH SCHOOL, BELUR</p>
+            <div class="tl-score"><i class="fa-solid fa-star me-1"></i>Percentage: <strong>64.64%</strong></div>
+            <p class="tl-desc">Completed secondary education with First class.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-dot"><i class="fa-solid fa-book-open"></i></div>
+          <div class="timeline-card">
+            <span class="tl-year">2021 – 2022</span>
+            <h4>PUC (12th Grade) – Commerce</h4>
+            <p class="tl-school"><i class="fa-solid fa-building-columns me-2"></i> SRI VIDYA VIKAS PU COLLEGE, BELUR</p>
+            <div class="tl-score"><i class="fa-solid fa-star me-1"></i>Percentage: <strong>83.67%</strong></div>
+            <p class="tl-desc">Computer Science, Economic, Business Studies, Accounts. Active member of the Commerce Club.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="timeline-card">
+            <span class="tl-year">2022 – 2025</span>
+            <h4>BCA – Bachulor Of Computer Application</h4>
+            <p class="tl-school"><i class="fa-solid fa-building-columns me-2"></i>JSS COLLEGE OF ARTS, COMMERCE AND SCIENCE(AUTONOMUS), OOTY ROAD, MYSURU</p>
+            <div class="tl-score"><i class="fa-solid fa-star me-1"></i>CGPA: <strong>7.66 / 10</strong></div>
+            <p class="tl-desc"> Core technical skills in DSA, DBMS, OS, Computer Networks and Web Development.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="section-pad">
+    <div class="container">
+
+        <div class="section-header text-center" data-aos="fade-up">
+            <span class="section-tag">What I Know</span>
+            <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <!-- Web Technologies -->
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <h4>Web Technologies</h4>
+
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming -->
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <h4>Programming</h4>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h4>Tools & Technologies</h4>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Database Management</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="row mt-5">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h4 class="skills-cat-title mb-4">
+                    <i class="fa-solid fa-brain me-2"></i>Soft Skills
+                </h4>
+
+                <div class="soft-skills-modern">
+                    <span><i class="fa-solid fa-comments"></i> Communication </span>
+                    <span><i class="fa-solid fa-users"></i> Teamwork </span>
+                    <span><i class="fa-solid fa-puzzle-piece"></i> Problem Solving </span>
+                    <span><i class="fa-solid fa-lightbulb"></i> Critical Thinking </span>
+                    <span><i class="fa-solid fa-clock"></i> Time Management </span>
+                    <span><i class="fa-solid fa-user-check"></i> Leadership </span>
+                    <span><i class="fa-solid fa-book"></i> Continuous Learning </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <!-- ==================== PROJECTS ==================== -->
+
+<section id="projects" class="section-pad alt-bg">
+  <div class="container">
+
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">What I've built</span>
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+    </div>
+
+<div class="row g-4 mt-2" id="projectsGrid">
+
+  <!-- Project 1 -->
+  <div class="col-lg-4 col-md-6 project-item" data-category="web" data-aos="fade-up" data-aos-delay="50">
+    <div class="project-card">
+
+      <div class="project-img-wrap">
+        <img
+          src="assets/image1.jpg"
+          alt="Heart Disease Detection"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/400x240/1a1a2e/6c63ff?text=Heart+Disease+Detection&font=syne'"
+        />
+      </div>
+
+      <div class="project-body">
+        <h5>Heart Disease Detection</h5>
+        <p>Innovative health prediction system using Machine Learning algorithms.</p>
+
+        <div class="project-footer">
+          <!-- Add project links here if needed -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="col-lg-4 col-md-6 project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+    <div class="project-card">
+
+      <div class="project-img-wrap">
+        <img
+          src="assets/image2.jpg"
+          alt="Portfolio Website"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/400x240/1a1a2e/6c63ff?text=Portfolio+Website&font=syne'"
+        />
+      </div>
+
+      <div class="project-body">
+        <h5>Portfolio Website</h5>
+        <p>Responsive personal portfolio website developed using HTML, CSS, JavaScript and Bootstrap.</p>
+
+        <div class="project-footer">
+          <!-- Add project links here if needed -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+</section>
+
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+ <section id="achievements" class="section-pad achievements-section">
+  <div class="container">
+
+    <div class="section-header text-center" data-aos="fade-up">
+      <span class="section-tag">My Accomplishments</span>
+      <h2 class="section-title">
+        Achievements & <span class="accent">Certifications</span>
+      </h2>
+      <p class="section-subtitle">
+        Professional certifications and achievements that demonstrate my technical skills and continuous learning journey.
+      </p>
+    </div>
+
+    <div class="row g-4 mt-4">
+
+      <!-- Certificate 1 -->
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in">
+        <div class="achievement-card">
+          <div class="achievement-inner">
+
+            <div class="achievement-img">
+              <img src="assets/certificate1.jpeg" alt="WordPress Certificate">
+            </div>
+
+            <div class="achievement-content">
+              
+              <h5>WordPress Development</h5>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="achievement-card">
+          <div class="achievement-inner">
+
+            <div class="achievement-img">
+              <img src="assets/Certificate2.jpeg" alt="NLP Certificate">
+            </div>
+
+            <div class="achievement-content">
+             
+
+              <h5>Natural Language Processing</h5>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="achievement-card">
+          <div class="achievement-inner">
+
+            <div class="achievement-img">
+              <img src="assets/Certificate3.jpeg" alt="MongoDB Certificate">
+            </div>
+
+            <div class="achievement-content">
+              
+
+              <h5>MongoDB CRUD Operations</h5>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="achievement-card">
+          <div class="achievement-inner">
+
+            <div class="achievement-img">
+              <img src="assets/Certificate4.jpeg" alt="Cybersecurity Certificate">
+            </div>
+
+            <div class="achievement-content">
+              
+
+              <h5>Cybersecurity & Digital Forensics</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section-pad alt-bg">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="row g-5 mt-2">
+        <div class="col-lg-5" data-aos="fade-right">
+          <h4 class="contact-heading">Let's work together!</h4>
+          <p class="contact-subtext">I'm open to internship opportunities, freelance work, and full-time roles. Feel free to reach out — I'll respond within 24 hours.</p>
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div><span>Email</span><strong>sowjanyasuvarna72@gmail.com</strong></div>
+            </div>
+            <div class="contact-info-card">
+              <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+              <div><span>Phone</span><strong>+91 831XXXXXXX</strong></div>
+            </div>
+            <div class="contact-info-card">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div><span>Location</span><strong>Bangalore, India</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="contact-form-wrap">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="form-group-custom">
+                    <input type="text" id="cName" placeholder=" " required />
+                    <label for="cName"><i class="fa-solid fa-user me-2"></i>Your Name</label>
+                    <span class="err-msg">Please enter your name.</span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group-custom">
+                    <input type="email" id="cEmail" placeholder=" " required />
+                    <label for="cEmail"><i class="fa-solid fa-envelope me-2"></i>Your Email</label>
+                    <span class="err-msg">Enter a valid email address.</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <input type="text" id="cSubject" placeholder=" " required />
+                    <label for="cSubject"><i class="fa-solid fa-tag me-2"></i>Subject</label>
+                    <span class="err-msg">Please enter a subject.</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-custom">
+                    <textarea id="cMessage" rows="5" placeholder=" " required></textarea>
+                    <label for="cMessage"><i class="fa-solid fa-message me-2"></i>Your Message</label>
+                    <span class="err-msg">Please write a message.</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-primary-custom w-100 justify-content-center">
+                    <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                  </button>
+                  <div id="formSuccess" class="form-success-msg d-none">
+                    <i class="fa-solid fa-circle-check me-2"></i>Message sent! I'll reply soon.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 py-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+  <span class="brand-bracket">&lt;</span>
+  Sowjanya <span class="brand-accent">K M</span>
+  <span class="brand-bracket">&gt;</span>
+</div>
+          <p class="footer-desc">Building elegant digital experiences with clean code and creative design. Open to new opportunities.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/sowjanyasuvarna72-spec" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sowjanya-suvarna2" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="footer-heading">More</h6>
+          <ul class="footer-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="assets/resume.pdf" download>Resume</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="footer-heading">Currently Looking For</h6>
+          <div class="footer-status">
+            <span class="status-dot"></span>
+            <span>Open to internships & full-time roles</span>
+          </div>
+          <p class="footer-skills-mini">Python &nbsp;·&nbsp;  SQL &nbsp;·&nbsp; ML</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sowjanya K M </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
